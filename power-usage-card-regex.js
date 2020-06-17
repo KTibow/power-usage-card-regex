@@ -98,4 +98,4 @@ class PowerUsageCardRE extends HTMLElement {
   }
 }
 
-customElements.define('power-usage-card-re', PowerUsageCardRE);
+customElements.define('power-usage-card-regex', PowerUsageCardRE);
