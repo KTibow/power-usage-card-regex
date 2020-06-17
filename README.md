@@ -19,7 +19,9 @@ This card will display a doughnut chard that gives insights in your current powe
                                                    # with total_power_usage option enabled.
   filter: "^.*_total$"                             # Mandatory - regular expression to match; 
                                                    #    all entities matching this RE will be treated
-                                                   #    as included, if they have a numeric state
+                                                   #    as included, if they have a numeric state;
+                                                   #    their name will be taken from "friendly_name" attribute,
+                                                   ä    so set them wisely
  ```
 
 ![screenshot](https://raw.githubusercontent.com/DBa2016/power-usage-card-regex/master/power-usage-card-regex.png)
