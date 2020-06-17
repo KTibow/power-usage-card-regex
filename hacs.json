@@ -1,6 +1,6 @@
 {
-  "name": "Power Usage Card with RE",
+  "name": "Power Usage Card with Regular Expressions",
   "content_in_root": true,
-  "filename": "power-usage-card-re.js",
+  "filename": "power-usage-card-regex.js",
   "render_readme": true
 }
