@@ -1,9 +1,17 @@
-# Lovelace power usage graph card
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+# Lovelace power usage graph card with regexp
 
-This card will display a doughnut chard that gives insights in your current power usage. 
+This card will display a doughnut chard that gives insights in your current power usage. Unlike the original one, you don't need to enumerate all the devices you have - you just need to define a regular expression matching all the entities. 
+
+Note: the card is not collecting any data, it is only displaying momentary values. If your devices report "power" (in Watt) and not "power usage" (kWh, sometimes Ws), then you should consider using "integration" (https://www.home-assistant.io/integrations/integration/) or "utility meter" (https://www.home-assistant.io/integrations/utility_meter/) components.
+
+The card will suppress displaying entities which do not have a numeric state (normally "unavailable", on devices which are really unavailable or just not initialized yet).
 
 ## Usage
-1. Add plugin .js as a module:
+1. 
+- HACS: add through HACS. You will likely need to have HACS include this plugin into the Lovelace ressources and to reload the page after it
+- manual:
+Add plugin .js as a module:
 ```
 - url: /local/power-usage-card-regex.js
   type: module
