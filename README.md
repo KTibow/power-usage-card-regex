@@ -29,7 +29,7 @@ Add plugin .js as a module:
                                                    #    all entities matching this RE will be treated
                                                    #    as included, if they have a numeric state;
                                                    #    their name will be taken from "friendly_name" attribute,
-                                                   ä    so set them wisely
+                                                   #    so set them wisely
  ```
 
 ![screenshot](https://raw.githubusercontent.com/DBa2016/power-usage-card-regex/master/power-usage-card-regex.png)
